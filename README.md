@@ -1,1 +1,1 @@
-#Teradata
+# Teradata
