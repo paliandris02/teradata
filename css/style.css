@@ -6,10 +6,14 @@ Font sizes
 
 Font weights: 
 Default: 400
+500
+600
+700
 
 Line heights:
 Default: 1
-
+1.05
+1.6
 
 --- 02 Colors
 
@@ -27,7 +31,7 @@ Greys:
 --- 03 Shadows
 
 --- 04 Border-radius
-
+9px
 --- 05 Whitespace
 
 Spacing (px)
@@ -66,27 +70,29 @@ body {
   text-decoration: none;
   font-weight: 600;
 
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: #ffb703;
   color: #fff;
 }
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
-  color: #555;
+  color: #023047;
 }
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: #fff;
+  color: #023047;
+  box-shadow: inset 0 0 0 3px #023047;
 }
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
   /*TRICK TO ADD BORDER "INSIDE"*/
-  box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #023047;
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -95,23 +101,57 @@ body {
 /*HEADER*/
 /*******************/
 .logo {
-  height: 2.4rem;
+  height: 10rem;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: #8ecae6;
   /*Because it will be sticky later*/
   height: 9.6rem;
   padding: 4.2rem;
+}
+
+/*******************/
+/*NAVIGATION*/
+/*******************/
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fb8500;
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #ffb703;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #fb8500;
 }
 /*******************/
 /*HERO SECTION*/
 /*******************/
 
 .section-hero {
-  background-color: #fdf2e9;
+  background-color: #8ecae6;
   padding: 4.8rem 0 9.6rem 0;
 }
 .hero {
@@ -139,6 +179,8 @@ body {
 
 .hero-img {
   width: 100%;
+  box-shadow: 2px 2px 8px #333;
+  border-radius: 15px;
 }
 
 .delivered-meals {
@@ -155,7 +197,7 @@ body {
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid #fdf2e9;
+  border: 3px solid #8ecae6;
 }
 .delivered-imgs img:last-child {
   margin-right: 0;
@@ -166,7 +208,7 @@ body {
 }
 .delivered-text span {
   display: flex;
-  color: #cf711f;
+  color: #fb8500;
   font-weight: 700;
   font-size: 3rem;
 }
