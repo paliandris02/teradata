@@ -195,7 +195,7 @@ body {
 /*HOW IT WORKS SECTION*/
 /*******************/
 .section-how {
-  padding: 9.6rem;
+  padding: 9.6rem 0;
 }
 .step-number {
   font-size: 8.6rem;
@@ -214,4 +214,90 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/*******************/
+/*SERVICES SECTION*/
+/*******************/
+.section-services {
+  padding: 9.6rem 0;
+  background-color: #8ecae6;
+}
+.service {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 13px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+.service:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+.service-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.service-tags {
+  margin-bottom: 1.2rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #219ebc;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.service-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.service-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+.service-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.service-img {
+  width: 100%;
+}
+.service-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #fb8500;
+}
+.service-list {
+  background-color: #fff;
+  border-radius: 13px;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #fb8500;
+}
+.all-services {
+  text-align: center;
+  font-size: 1.8rem;
 }
