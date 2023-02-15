@@ -60,7 +60,8 @@ body {
 /*HEADER*/
 /*******************/
 .logo {
-  height: 10rem;
+  height: 5rem;
+  border-radius: 5px;
 }
 .header {
   display: flex;
@@ -300,4 +301,210 @@ body {
 .all-services {
   text-align: center;
   font-size: 1.8rem;
+}
+/*******************/
+/*TESTIMONIALS SECTION*/
+/*******************/
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2em;
+}
+.testimonial-img {
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  align-self: center;
+  justify-self: center;
+}
+.testimonial {
+  display: grid;
+  padding: 1.2rem;
+  transition: all 0.3s;
+}
+.testimonial:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+.testimonial-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1rem;
+  color: #777;
+  justify-self: end;
+  align-self: end;
+}
+/*******************/
+/*PRICING SECTION*/
+/*******************/
+.section-pricing {
+  padding: 9.6rem 0;
+  background-color: #8ecae6;
+}
+.pricing-plan {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2.4rem;
+  transition: all 0.3s;
+}
+.pricing-plan:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+.plan-contains {
+  color: #2a9d8f !important;
+}
+.plan-not-contains {
+  color: #d62828 !important;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  font-weight: 600;
+  color: #fb8500;
+  margin-bottom: 2rem;
+}
+.plan-price {
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #000;
+  font-weight: 450;
+}
+.plan-sign-up {
+  text-align: center;
+  margin-top: 3.8rem;
+}
+.plan-details {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.recommended-plan {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 48, 71, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  position: relative;
+  overflow: hidden;
+}
+.recommended-plan::after {
+  content: "BEST VALUE";
+  position: absolute;
+  top: 7%;
+  right: -17%;
+  background-color: #ffb703;
+  transform: rotate(45deg);
+  padding: 0.8rem 5rem;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.recommended-price {
+  color: #fff;
+}
+.recommended-text {
+  color: #8ecae6;
+}
+.recommended-list span {
+  color: #fff;
+}
+/*-------*/
+.feature-container {
+  display: ;
+}
+.feature {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2.4rem;
+}
+.feature-icon {
+  color: #333;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #ffb703;
+  border-radius: 50%;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+}
+/*******************/
+/*CTA SECTION*/
+/*******************/
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #fb8500; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #fb911a, #fb8500);
+  overflow: hidden;
+
+  height: 50rem;
+}
+.cta-text-box {
+  color: #4b2800;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta .heading-secondary {
+  color: #4b2800;
+  margin-bottom: 3.2rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(251, 145, 24, 0.2),
+      rgb(251, 133, 0, 0.2)
+    ),
+    url(../img/cta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
