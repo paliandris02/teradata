@@ -165,7 +165,7 @@ body {
 }
 .delivered-text span {
   display: flex;
-  color: #fb8500;
+  color: #190d00;
   font-weight: 700;
   font-size: 3rem;
 }
@@ -344,7 +344,7 @@ body {
 /*PRICING SECTION*/
 /*******************/
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 4.8rem;
   background-color: #8ecae6;
 }
 .pricing-plan {
@@ -467,6 +467,9 @@ body {
 /*******************/
 /*CTA SECTION*/
 /*******************/
+.section-call-to-action {
+  padding: 9.6rem 0;
+}
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -475,8 +478,6 @@ body {
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #fb911a, #fb8500);
   overflow: hidden;
-
-  height: 50rem;
 }
 .cta-text-box {
   color: #4b2800;
@@ -488,23 +489,104 @@ body {
   margin-bottom: 4.8rem;
 }
 .cta .heading-secondary {
-  color: #4b2800;
+  color: inherit;
   margin-bottom: 3.2rem;
 }
 .cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(251, 145, 24, 0.2),
-      rgb(251, 133, 0, 0.2)
-    ),
-    url(../img/cta.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  background-color: #fff;
+}
+.cta-img {
+  width: 100%;
+  align-self: center;
 }
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: #fdf2e9;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #999;
+}
+/*******************/
+/*FOOTER SECTION*/
+/*******************/
+.footer {
+  padding: 12.8rem 0 0.1rem 0;
+  background-color: #8ecae6;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.copyright {
+  margin-top: auto;
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.6;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.address {
+  margin-bottom: 2.4rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+  transition: all 0.1s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }

@@ -32,6 +32,7 @@
   margin-bottom: 1.6rem;
   color: #fb8500;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -41,6 +42,9 @@
   text-decoration: none;
   font-weight: 600;
 
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   transition: all 0.3s;
 }
 .btn--full:link,
@@ -64,6 +68,15 @@
   background-color: #fdf2e9;
   /*TRICK TO ADD BORDER "INSIDE"*/
   box-shadow: inset 0 0 0 3px #023047;
+}
+.btn--form {
+  background-color: #8ecae6;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #fb8500;
 }
 .link:link,
 .link:visited {
@@ -110,8 +123,15 @@
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 .grid--center-v {
   align-items: center;
+}
+*:focus {
+  outline: #023047 solid 3px;
+  /* outline-offset: 3px; */
 }
 /*HELPER*/
 strong {

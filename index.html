@@ -22,10 +22,13 @@
       /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section</a></li>
-          <li><a class="main-nav-link" href="#">Section</a></li>
-          <li><a class="main-nav-link" href="#">Section</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section</a></li>
+          <li><a class="main-nav-link" href="#howit">How it works</a></li>
+          <li><a class="main-nav-link" href="#services">Services</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Get Demo</a></li>
         </ul>
       </nav>
     </header>
@@ -41,7 +44,7 @@
               repellendus harum quae reiciendis sequi.
             </p>
             <a href="#" class="btn btn--full margin-right-sm">Choose a plan</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#howit" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-service">
               <div class="delivered-imgs">
                 <img src="img/customer-1.jpg" alt="Customer photo" />
@@ -78,7 +81,7 @@
         </div>
       </section>
       <!-- HOW IT WORKS -->
-      <section class="section-how">
+      <section id="howit" class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -151,7 +154,7 @@
         </div>
       </section>
       <!-- SERVICES -->
-      <section class="section-services">
+      <section id="services" class="section-services">
         <div class="container center-text">
           <span class="subheading">Services</span>
           <h2 class="heading-secondary">
@@ -303,7 +306,7 @@
         </div>
       </section>
       <!-- TESTIMONIALS -->
-      <section class="section-testimonials">
+      <section id="testimonials" class="section-testimonials">
         <div class="container grid grid--2-cols">
           <div>
             <span class="subheading">Testimonials</span>
@@ -365,7 +368,7 @@
         </div>
       </section>
       <!--  PRICING -->
-      <section class="section-pricing">
+      <section id="pricing" class="section-pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -592,7 +595,7 @@
                 </div>
                 <div>
                   <label for="select-topic"
-                    >What service are you most interested in?</label
+                    >Which service are you most interested in?</label
                   >
                   <select id="select-topic" required>
                     <option value="">Please choose one option</option>
@@ -605,18 +608,86 @@
                     <option value="data-management">Data Management</option>
                   </select>
                 </div>
-                <button class="btn">Submit</button>
+                <button class="btn btn--form">Submit</button>
               </form>
             </div>
-            <!-- <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Illustration of working"
-            ></div> -->
+            <div class="cta-img-box">
+              <img class="cta-img" src="img/cta.jpg" / >
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a class="footer-logo" href="#"
+            ><img class="logo" alt="Teradata logo" src="img/logo2.png"
+          /></a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2023 by teradata, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">522 Harrison Ave., 3rd Floor, San Diego, Ca</p>
+            <p>
+              <a class="footer-link" href="tel:321-141-5122">321-141-5122</a
+              ><br />
+              <a class="footer-link" href="mailto:contact@teradata.com"
+                >contact@teradata.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About teradata</a></li>
+            <li><a class="footer-link" href="#">For Customers</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Teradata directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & Terms </a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
