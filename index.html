@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -31,6 +33,10 @@
           <li><a class="main-nav-link nav-cta" href="#">Get Demo</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <!-- HERO -->
@@ -88,8 +94,8 @@
             Ut aliquet, ex fringilla vestibulum tristique.
           </h2>
         </div>
-        <!-- STEP 1 -->
         <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 1 -->
           <div class="step--text-box">
             <p class="step-number">1</p>
             <h3 class="heading-tertiary">
@@ -307,7 +313,7 @@
       </section>
       <!-- TESTIMONIALS -->
       <section id="testimonials" class="section-testimonials">
-        <div class="container grid grid--2-cols">
+        <div class="testimonial-container container grid grid--2-cols">
           <div>
             <span class="subheading">Testimonials</span>
             <h2 class="heading-secondary">
@@ -528,7 +534,7 @@
           </aside>
         </div>
 
-        <div class="container feature-container grid grid--4-cols grid-gap-sm">
+        <div class="container grid grid--4-cols grid-gap-sm">
           <div class="feature">
             <ion-icon class="feature-icon" name="construct-outline"></ion-icon>
             <p class="feature-title">Curabitur convallis ligula.</p>
@@ -563,7 +569,7 @@
           </div>
         </div>
       </section>
-
+      <!-- FORM -->
       <section class="section-call-to-action">
         <div class="container">
           <div class="cta">
@@ -595,10 +601,10 @@
                 </div>
                 <div>
                   <label for="select-topic"
-                    >Which service are you most interested in?</label
+                    >Which service are you most interested in? (optional)</label
                   >
-                  <select id="select-topic" required>
-                    <option value="">Please choose one option</option>
+                  <select id="select-topic">
+                    <option value=""></option>
                     <option value="cloud">Cloud</option>
                     <option value="ai-machine-learning">
                       AI & Machine Learning
@@ -644,11 +650,12 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2023 by teradata, Inc. All rights reserved.
+            Copyright &copy; <span class="year"></span> by teradata, Inc. All
+            rights reserved.
           </p>
         </div>
         <div class="address-col">
-          <p class="footer-heading">Contact us</p>
+          <p class="footer-heading">Contact</p>
           <address class="contacts">
             <p class="address">522 Harrison Ave., 3rd Floor, San Diego, Ca</p>
             <p>
