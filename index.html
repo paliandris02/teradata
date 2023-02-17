@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teradata</title>
+    <meta
+      name="desctiption"
+      content="At Teradata, we believe the environment is our social responsibility and that sustainable business practices are good for our world and right for our business."
+    />
+    <title>Teradata - Make data your greatest asset</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +34,7 @@
             <a class="main-nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Get Demo</a></li>
+          <li><a class="main-nav-link nav-cta" href="#pricing">Get Demo</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -49,7 +53,9 @@
               Cupiditate quo quas sunt voluptas deserunt officia perferendis
               repellendus harum quae reiciendis sequi.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Choose a plan</a>
+            <a href="#pricing" class="btn btn--full margin-right-sm"
+              >Choose a plan</a
+            >
             <a href="#howit" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-service">
               <div class="delivered-imgs">
@@ -110,14 +116,22 @@
           </div>
 
           <div class="step--img-box">
+            <picture>
+              <source srcset="img/how-it-works-1.webp" type="image/webp" />
+              <source srcset="img/how-it-works-1.jpg" type="image/jpg" />
+            </picture>
             <img
               class="step--img"
               alt="Data collecting from devices"
-              src="img/how-it-works-1.jpg"
+              src="img/how-it-works-1.webp"
             />
           </div>
           <!-- STEP 2 -->
           <div class="step--img-box">
+            <picture>
+              <source srcset="img/how-it-works-2.webp" type="image/webp" />
+              <source srcset="img/how-it-works-2.jpg" type="image/jpg" />
+            </picture>
             <img
               class="step--img"
               alt="Illustration of people working with graphs"
@@ -151,10 +165,14 @@
           </div>
 
           <div class="step--img-box">
+            <picture>
+              <source srcset="img/how-it-works-3.webp" type="image/webp" />
+              <source srcset="img/how-it-works-3.jpg" type="image/jpg" />
+            </picture>
             <img
               class="step--img"
               alt="Illustration of a presentation"
-              src="img/how-it-works-3.jpg"
+              src="img/how-it-works-3.webp"
             />
           </div>
         </div>
@@ -427,7 +445,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Get Demo</a>
+              <a href="#cta" class="btn btn--full">Get Demo</a>
             </div>
           </div>
           <!---->
@@ -475,7 +493,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Get Starter</a>
+              <a href="#cta" class="btn btn--full">Get Starter</a>
             </div>
           </div>
           <!---->
@@ -523,7 +541,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Get Pro</a>
+              <a href="#cta" class="btn btn--full">Get Pro</a>
             </div>
           </div>
         </div>
@@ -570,7 +588,7 @@
         </div>
       </section>
       <!-- FORM -->
-      <section class="section-call-to-action">
+      <section id="cta" class="section-call-to-action">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -580,10 +598,11 @@
                 fringilla sed faucibus eget, lobortis eu massa. Suspendisse
                 accumsan vulputate.
               </p>
-              <form action="#" class="cta-form">
+              <form action="#" class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
+                    name="full-name"
                     id="full-name"
                     type="text"
                     placeholder="John Smith"
@@ -593,6 +612,7 @@
                 <div>
                   <label for="email">Email address</label>
                   <input
+                    name="email"
                     id="email"
                     type="email"
                     placeholder="me@example.com"
@@ -603,7 +623,7 @@
                   <label for="select-topic"
                     >Which service are you most interested in? (optional)</label
                   >
-                  <select id="select-topic">
+                  <select id="select-topic" name="selected-topic">
                     <option value=""></option>
                     <option value="cloud">Cloud</option>
                     <option value="ai-machine-learning">
